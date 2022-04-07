@@ -6,6 +6,9 @@ Forma de usar:
 
 `task.png` debe ser el path de la imágen que se desea redimensionar.
 
+> Nota:
+> Se recomienda que no existan espacios en el path o el nombre de la imágen.
+
 `xxxhdpi` es la resolución de partida de la imágen (ldpi, mdip, hdpi, xhdpi, xxhdpi, xxxhdpi).
 
 > Nota:
@@ -40,3 +43,10 @@ Para redimensionar las imágenes se tiene en cuenta las siguientes proporciones.
 
 > Nota:
 > Como referencia se toma la proporción MDPI como base para calcular las restantes tamaños de imágenes.
+
+# Dependencias
+
+Para el funcionamiento del script es necesario tener instalado el paquete `imagemagick-6.q16` en linux.
+
+> Nota:
+> El script ha sido probado tanto en Linux como en Windows mediante la opción de **WSL**
