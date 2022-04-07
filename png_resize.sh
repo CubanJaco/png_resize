@@ -3,48 +3,24 @@ image=$1
 start_resolution=$2
 start_type=0
 
-width=$(identify -format '%w' $image)
-height=$(identify -format '%h' $image)
-
-wbase=0.0
-hbase=0.0
-
 if [ $start_resolution = "xxxhdpi" ]; then
-	wbase=$width
-	hbase=$height
 	start_type=6
 fi
 
 if [ $start_resolution = "xxhdpi" ]; then
-	wbase=$( expr $width / 0.75 )
-	hbase=$( expr $height / 0.75 )
 	start_type=5
 fi
 
 if [ $start_resolution = "xhdpi" ]; then
-	wbase=$( expr $width / 0.5 )
-	hbase=$( expr $height / 0.5 )
 	start_type=4
 fi
 
 if [ $start_resolution = "hdpi" ]; then
-	wbase=$( expr $width / 0.375 )
-	hbase=$( expr $height / 0.375 )
 	start_type=3
 fi
 
 if [ $start_resolution = "mdpi" ]; then
-	wbase=$( expr $width / 0.25 )
-	hbase=$( expr $height / 0.25 )
 	start_type=2
-fi
-
-if [ $width = 0 ]; then
-	exit 1
-fi
-
-if [ $height = 0 ]; then
-	exit 1
 fi
 
 percent_xxxhdpi=100%
