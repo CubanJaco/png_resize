@@ -46,7 +46,13 @@ Para redimensionar las imágenes se tiene en cuenta las siguientes proporciones.
 
 # Dependencias
 
-Para el funcionamiento del script es necesario tener instalado el paquete `imagemagick-6.q16` en linux.
+### Linux
+Para el funcionamiento del script es necesario tener instalado el paquete `imagemagick-6.q16` en **linux**.
 
 > Nota:
 > El script ha sido probado tanto en Linux como en Windows mediante la opción de **WSL**
+
+### macOS
+
+Es necesario el paquete `imagemagick` para hacer uso de la manipulación de imágenes.
+    brew install imagemagick
