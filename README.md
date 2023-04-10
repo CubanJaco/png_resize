@@ -55,4 +55,5 @@ Para el funcionamiento del script es necesario tener instalado el paquete `image
 ### macOS
 
 Es necesario el paquete `imagemagick` para hacer uso de la manipulación de imágenes.
+
     brew install imagemagick
